@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="webintegrationstyle.css">
+</head>
+
+<body>
+    <div class="bg-container" id="sectionHome">
+        <h1 class="home-heading">Animals</h1>
+        <div class="container">
+            <div class="card-container d-flex flex-row">
+                <div class="card-content d-flex flex-column">
+                    <img class="home-image" src="https://assets.ccbp.in/frontend/static-website/animals-turtle-img.png" />
+                    <button class=" view-button btn btn-primary" onclick="display('sectionTurtle')">View Details</button>
+                </div>
+                <div class="card-content d-flex flex-column">
+                    <img class="home-image" src="https://assets.ccbp.in/frontend/static-website/animals-raccoon-img.png" />
+                    <button class=" view-button btn btn-primary" onclick="display('sectionRaccoon')">View Details</button>
+                </div>
+            </div>
+            <div class="card-container d-flex flex-row">
+                <div class="card-content d-flex flex-column">
+                    <img class="home-image" src="https://assets.ccbp.in/frontend/static-website/animals-kangaroo-img.png" />
+                    <button class=" view-button btn btn-primary" onclick="display('sectionKangaroo')">View Details</button>
+                </div>
+                <div class="card-content d-flex flex-column">
+                    <img class="home-image" src="https://assets.ccbp.in/frontend/static-website/animals-lion-img.png" />
+                    <button class=" view-button btn btn-primary" onclick='display("sectionLion")'>View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="turtle-bg d-flex flex-column justify-content-end" id="sectionTurtle">
+        <p class="sea-turtle">Sea Turtle</p>
+        <h1 class="heading-turtle">Sea Turtles are reptiles of the order testudines</h1>
+        <button class="back-button btn btn-primary" onclick="display('sectionHome')">Back</button>
+    </div>
+    <div class="raccoon-bg d-flex flex-column justify-content-end" id="sectionRaccoon">
+        <p class="sea-turtle">Raccoon</p>
+        <h1 class="heading-turtle">Raccoon is a medium sized mammal native to North America</h1>
+        <button class="back-button btn btn-primary" onclick="display('sectionHome')">Back</button>
+    </div>
+    <div class="kangaroo-bg d-flex flex-column justify-content-end" id="sectionKangaroo">
+        <p class="sea-turtle">Kangaroo</p>
+        <h1 class="heading-turtle">Kangaroo are large marsupials that are found only in Australia</h1>
+        <button class="back-button btn btn-primary" onclick="display('sectionHome')">Back</button>
+    </div>
+    <div class="lion-bg d-flex flex-column justify-content-end" id="sectionLion">
+        <p class="sea-turtle">Lion</p>
+        <h1 class="heading-turtle">Lions have very sharp eyesight and called excellent hunter</h1>
+        <button class="back-button btn btn-primary" onclick="display('sectionHome')">Back</button>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
